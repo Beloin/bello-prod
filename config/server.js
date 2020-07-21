@@ -11,11 +11,10 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
 mongoose.Promise = global.Promise;
-mongoose.connect('mongodb://localhost/belloDB')
-// {
-//     useUnifiedTopology: true,
-//     useNewUrlParser: true,
-// }
+mongoose.connect('mongodb://localhost/belloDB', {
+    useUnifiedTopology: true,
+    useNewUrlParser: true,
+});
 
 consign()
     .include('middlewares') // Middlewares in Use

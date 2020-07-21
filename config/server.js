@@ -11,7 +11,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
 mongoose.Promise = global.Promise;
-mongoose.connect('mongodb://localhost/belloDB', {
+mongoose.connect('mongodb://heroku_9msnkspt:eMcsxFa4c9yETP2@ds111535.mlab.com:11535/heroku_9msnkspt', {
     useUnifiedTopology: true,
     useNewUrlParser: true,
 });

@@ -1,5 +1,7 @@
 const app = require('./config/server');
 
-app.listen(3000, function () {
+const port = process.env.PORT || 3000;
+
+app.listen(port, function () {
     console.log('Servidor Online na porta 3000');
 });
